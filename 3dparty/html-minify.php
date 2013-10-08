@@ -18,7 +18,7 @@ class HTML_Minify
 	
 	
 	
-	public function __construct($html, $compress_css=true, $compress_js=false, $info_comment=false, $remove_comments=true, $shorten_urls=true)
+	public function __construct($html, $compress_css=true, $compress_js=false, $info_comment=true, $remove_comments=true, $shorten_urls=true)
 	{
 		if ($html !== '')
 		{
@@ -55,7 +55,7 @@ class HTML_Minify
 		
 		$savings = round($savings, 2);
 		
-		return '<!--Bytes antes:'.$raw.', despues:'.$compressed.'; ahorrado:'.$savings.'%-->';
+		return '<!--Bytes antes:'.$raw.', despues:'.$compressed.'; ahorrado:'.$savings.'% Porgramado por Jorge Pacora(jpacora.com)-->';
 	}
 	
 	

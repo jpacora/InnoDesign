@@ -4,10 +4,13 @@
 	<head>
 		<title>Innodesign - Creamos y dise&ntilde;amos la innovaci&oacute;n</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="description" content="Syndicate - Multipurpose Bootstrap Retina Template">
-		<meta name="author" content="Awerest - interactive agency">
+		<meta name="description" content="Innodesign - Creamos y dise&ntilde;amos la innovaci&oacute;n">
+		<meta name="author" content="InnoDesign Dev Team">
+		<link rel="stylesheet" href="/static/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/static/css/under_style.css">
+		<link rel="stylesheet" href="/static/bootstrap-modal-bs3patch.css">
+		<link rel="stylesheet" href="/static/css/bootstrap-modal.css">
 		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:300,700'>
 		<link rel="image_src" href="thumbnail.png">
 		<link rel="icon" type="image/ico" href="favicon.png">
@@ -25,29 +28,55 @@
 					<h3><span>Pronto Lanzamiento!</span></h3>
 				</div>
 				<div class="col-lg-4 col-offset-4">
-					<div class="margin" id="mc_embed_signup">
-	<!--paste in your mailchimp link-->
-						<form action="http://awerest.us6.list-manage.com/subscribe/post?u=672d2812f94485fce9196abbf&amp;id=df7cb7e418" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline">
-							<div class="input-group">
-								<input type="email" value="" name="EMAIL" class="form-control input-large email" id="mce-EMAIL" placeholder="E-mail" required="">
-								<span class="input-group-btn">
-									<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"  class="btn btn-syndicate btn-large" type="button">Subscribirme</button>
-								</span>
-							</div>
-						</form>
-						<p class="text-center"><small>Nosotros no hacemos el spam.</small></p>
+					<div class="margin" id="mc_embed_signup" align="center">
+
+						<button class="btn btn-syndicate btn-large" data-toggle="modal" href="#responsive">Cont&aacute;ctanos</button>
 					</div>
 				</div>
 			</div>
 		</div>
+
+	<!-- Modal Definitions -->
+<div id="responsive" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+	<form id="contactoForm">
+  <div class="modal-header">
+    <h4 class="modal-title">Contacto</h4>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Nombre</h4>
+        <p><input class="form-control" type="text" placeholder="Tu Nombre" id="nombre" name="nombre"></p>
+      </div>
+      <div class="col-md-6">
+        <h4>Email</h4>
+        <p><input class="form-control" type="email" placeholder="Tu Email" id="email" name="email"></p>
+      </div>
+    <div class="col-md-6">
+        <h4>Mensaje</h4>
+        <p><textarea class="form-control" style="resize: none;" placeholder="Tu Mensaje" id="mensaje" name="mensaje"></textarea></p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn btn-default">Cancelar</button>
+    <button type="submit" class="btn btn-primary">Enviar!</button>
+	</form>
+  </div>
+</div>
+
 	<!--latest jQuery-->
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<!--formularios-->
+		<script src="/static/launchForm.js"></script>
 	<!--main bootstrap js-->
 		<script src="/static/js/bootstrap.min.js"></script>
 	<!--enable responsive features in IE8-->
 		<script src="/static/js/respond.min.js"></script>
 	<!--enable responsive features in IE8-->
 		<script src="/static/js/jquery.countdown.min.js"></script>
+		<script src="/static/js/bootstrap-modalmanager.js"></script>
+		<script src="/static/js/bootstrap-modal.js"></script>
 		<script>$('#countdown').countdown({until: new Date("October 14, 2013")});</script>
 	</body>
 </html>
