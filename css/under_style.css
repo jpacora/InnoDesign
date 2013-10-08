@@ -1,0 +1,118 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #fff;
+	color: #25272B;
+}
+
+h3 {
+	font-family: inherit;
+	font-size: 28px;
+	font-weight: 300;
+	color: #25272B;
+	margin: 20% 0 5% 0;
+	letter-spacing: -1px;
+	border-bottom: 2px solid #00a9df;
+	-webkit-text-stroke: 0.02em #25272B;
+}
+
+h3 span {
+	background: #fff;
+	top: 13px;
+	position: relative;
+	padding: 0 9px;
+}
+
+@media (max-width: 568px) {
+	h3 {
+		font-size: 18px;
+		letter-spacing: -0px;
+	}
+	h3 span {
+		top: 9px;
+	}
+}
+
+.form-control {
+	background: #eeeff2;
+	border: none;
+	box-shadow: none !important;
+}
+
+.btn-syndicate {
+	color: #fff;
+	background-color: #00a9df;
+	border-color: #00a9df;
+}
+
+.btn-syndicate:hover {
+	color: #fff;
+	background-color: #009acb;
+	border-color: #009acb;
+}
+
+.margin {
+	margin: 10% 0;
+}
+
+.countdown_rtl {
+	direction: rtl;
+}
+
+.countdown_holding span {
+	color: #888;
+}
+
+.countdown_row {
+	clear: both;
+	width: 100%;
+	padding: 0px 2px;
+	text-align: center;
+}
+
+.countdown_show1 .countdown_section {
+	width: 98%;
+}
+
+.countdown_show2 .countdown_section {
+	width: 48%;
+}
+
+.countdown_show3 .countdown_section {
+	width: 32.5%;
+}
+
+.countdown_show4 .countdown_section {
+	width: 24.5%;
+}
+
+.countdown_show5 .countdown_section {
+	width: 19.5%;
+}
+
+.countdown_show6 .countdown_section {
+	width: 16.25%;
+}
+
+.countdown_show7 .countdown_section {
+	width: 14%;
+}
+
+.countdown_section {
+	display: block;
+	float: left;
+	font-size: 75%;
+	text-align: center;
+}
+
+.countdown_amount {
+	font-size: 600%;
+	font-weight: 700;
+	letter-spacing: -2px;
+}
+
+@media (max-width: 568px) {
+	.countdown_amount {
+		font-size: 400%;
+		letter-spacing: -1px;
+	}
+}
