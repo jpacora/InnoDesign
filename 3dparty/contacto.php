@@ -16,7 +16,7 @@ include('phpmailer/class.smtp.php');
 
 	$mail = new PHPMailer;
 	$mail->IsSMTP();   
-	$mail->SMTPDebug = 1;                                   // Set mailer to use SMTP
+	$mail->SMTPDebug = 0;                                   // Set mailer to use SMTP
 	$mail->Host = 'localhost';  // Specify main and backup server
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'contacto@id-peru.com';                            // SMTP username
