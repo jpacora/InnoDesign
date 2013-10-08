@@ -7,15 +7,16 @@ tour.addStep({
 	showAt: "#intro",
     content:
 		"<div class='gl-overlay'>"+
-			"<h1>Welcome to Syndicate!</h1>"+
-			"<p>This is tour that you can use or not.</p>"+
-			"<button class='btn btn-syndicate squared start-tour'>Start tour</button>"+
-			" "+
-			"<button class='btn btn-eco squared gl-skip'>Skip tour</button>"+
+			"<h1>Bienvenido a InnoDesign!</h1>"+
+			"<p>Creamos y dise&ntilde;amos la innovaci&oacute;n.</p>"+
+			"<button class='btn btn-syndicate squared start-tour'>Continuar</button>"+
+			//" "+
+			//"<button class='btn btn-eco squared gl-skip'>Skip tour</button>"+
 		"</div>",
 	continueWhen: "click .start-tour",
 });
 
+/*
 tour.addStep({
 	type: "bubble",
 	title: "Intro section",
@@ -42,5 +43,6 @@ tour.addStep({
 	align: "center middle",
 	showContinue: true
 });
+*/
 
 githubGuide.register();
