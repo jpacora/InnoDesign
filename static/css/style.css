@@ -1,3 +1,15 @@
+.portapapeles
+{
+	background-color: #000;
+	border-radius: 10px;
+	padding: 100px;
+	margin: 200px;
+	width: 500px 100px;
+}
+.portapapeles h1
+{
+	color: #fff;
+}
 /*
 
 Template Name: Syndicate
