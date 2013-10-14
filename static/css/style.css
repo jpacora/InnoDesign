@@ -346,20 +346,20 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 	background: #3498db;
 }
 
-#third-header {
+#equipo {
 	background: #fff url(../img/headers/third.jpg) center top no-repeat;
 }
 
 @media (min-width: 1400px) {
 	#first-header,
-	#third-header {
+	#equipo {
 		background-size: cover;
 	}
 }
 
 @media (max-width: 767px) {
 	#first-header,
-	#third-header {
+	#equipo {
 		background-size: cover;
 	}
 }
