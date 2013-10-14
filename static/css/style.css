@@ -343,7 +343,7 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 /* ==== Header backgrounds ==== */
 
 #first-header {
-	background: #fff url(../img/headers/first.jpg) center top no-repeat;
+	background: #3498db;
 }
 
 #third-header {
