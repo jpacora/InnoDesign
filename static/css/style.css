@@ -179,7 +179,7 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 }
 
 #customers {
-	background: #25272B;
+	background: #fff;
 	padding: 90px 0px;
 	text-align: center;
 }
@@ -190,6 +190,7 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 	-ms-transition: 0.4s;
 	-o-transition: 0.4s;
 	transition: 0.4s;
+	margin-right: 20px;
 }
 
 #customers img:hover {
