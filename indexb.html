@@ -29,7 +29,61 @@
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 		<!--[if lt IE 9]>
 			<script src="/static/js/html5shiv.js"></script>
+
 		<![endif]-->
+		<script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyPyPG1sYvkaQl2tb2WHZl823sy7nvH00&sensor=false"></script>
+    <script>
+
+			function initialize() {
+			  var myLatlng = new google.maps.LatLng(-18.020474999999998,-70.25001944444445);
+			  var mapOptions = {
+			    zoom: 16,
+			    center: myLatlng,
+			    mapTypeId: google.maps.MapTypeId.ROADMAP,
+			    panControl: false,
+			    zoomControl: false,
+			    scaleControl: true,
+			    disableDefaultUI: true
+			    // scrollwheel: false,
+			    // draggable: false
+
+			  };
+
+			  var map = new google.maps.Map(document.getElementById('innomap'), mapOptions);
+
+			  var contentString =  '<div id="content" style=" width:200px; height:110px;">'+
+			      '<div id="headercontent" style="padding-top: 0px; margin-top: 0px; text-align:center">'+
+			      '<img src="static/img/favicon.png" /><br><br>'+
+			      '<h3 id="firstHeading" class="firstHeading" style="padding-top: 1px; margin-top: 0px; text-align:center">'+ 
+			        'Innodesign</h3></div>'  +
+			      '<div id="bodyContent" style="padding-top: 0px; margin-top: 0px; text-align:center">'+
+			      '<p>Calle Tacna 159 '+
+			      '<br>Tacna - Peru</p></div></div>';
+
+
+			  var infowindow = new google.maps.InfoWindow({
+			      content: contentString,
+			      maxWidth: 200
+			  });
+			 var image = {
+			    url: 'static/img/mark.png',
+			  };
+
+			  var marker = new google.maps.Marker({
+			      position: myLatlng,
+			      map: map,
+			      icon: image,
+			      title: 'Innodesign - Web Design'
+			  });
+			  google.maps.event.addListener(marker, 'click', function() {
+			    infowindow.open(map,marker);
+			  });
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset='61'>
 		<div id="preloader">
@@ -869,9 +923,13 @@
 		</section> -->
 	<!--end fourth section-->
 	<!--start contact section-->
+	<div class="divider"></div>
+	<section id="contact-header" class="header header-extended">
+		    <div id="innomap" style="width:100%;height:400px;"></div>       
+			<div id="map" data-start="opacity: 1;" data-250="opacity: 0;"></div>
+	</section>
 		<section id="contacto" class="content no-header">
 			<div class="container">
-				<div class="content-divider"></div>
 				<div class="row" id="contactofin">
 					<div class="col-lg-8 col-offset-2">
 						<h1 class="text-center">Cont&aacute;ctanos</h1>
@@ -922,7 +980,19 @@
 					</div>
 					<div class="col-lg-3 col-sm-3">
 						<h3>Ll&aacute;manos:</h3><br>
-						<blockquote>Fijo: (51) 052-634584<br> Cel RPC: (51) 952-719643 <br> Cel RPM: (51) 998866704 </blockquote>
+						<blockquote>Fijo: (51) 052-634584<br> Cel RPC: (51) 952-719643 <br> Cel RPM: (51) 998866704 <br>
+							
+						</blockquote>
+						<div id="SkypeButton_Call_Innodesign.Contacto_1">
+							  <script type="text/javascript">
+							    Skype.ui({
+							      "name": "call",
+							      "element": "SkypeButton_Call_Innodesign.Contacto_1",
+							      "participants": ["Innodesign.Contacto"],
+							      "imageSize": 32
+							    });
+							  </script>
+							</div>	
 					</div>
 				</div>
 			</div>
