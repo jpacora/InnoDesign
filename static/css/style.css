@@ -10,15 +10,11 @@
 {
 	color: #fff;
 }
+
+
+
 /*
 
-Template Name: Syndicate
-Template Demo: http://awerest.com/demo/syndicate
-Author: Awerest
-Author website: http://awerest.com
-Version: 1.0
-
----------------
 
 Table of Contents:
 
@@ -191,6 +187,7 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 	-o-transition: 0.4s;
 	transition: 0.4s;
 	margin-right: 20px;
+	margin-top: 20px;
 }
 
 #customers img:hover {
