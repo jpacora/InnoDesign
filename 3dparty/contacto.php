@@ -20,7 +20,7 @@ include('phpmailer/class.smtp.php');
 	$mail->Host = 'localhost';  // Specify main and backup server
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'contacto@id-peru.com';                            // SMTP username
-	$mail->Password = '123';                           // SMTP password
+	$mail->Password = 'tin';                           // SMTP password
 	//$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 	$mail->From = 'contacto@id-peru.com';
 	$mail->FromName = 'Contacto';
