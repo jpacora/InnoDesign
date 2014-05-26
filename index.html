@@ -2,11 +2,11 @@
 <html lang="es">
 	
 <head>
-		<title>Innodesign - Creamos y dise&ntilde;amos la innovaci&oacute;n</title>
+		<title>Innodesign - Agencia de Tecnologia | Web Design y Marketing Digital</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<!--Set the descritpion of you site-->
-		<meta name="description" content="Desarrollo de paginas web, Diseño Web Peru, Diseño Publicitario Peru, Branding, Estrategia Digital, Marketing Online, Paginas web Tacna, Tacna, Sitio web tacna, sistemas integrales, software tacna, Innodesign, Innodesign Peru, ">
+		<meta name="description" content="Innodesign - Utilizamos la tecnologia para crear y optimizar soluciones empresariales que aceleren el desempeño de su empresa, brindando servicios tales como diseño de paginas web, SEO, SEM, branding, marketing y estrategia digital, publicidad y aplicaciones moviles ">
 		<!--Set author of your site-->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://www.id-peru.com/" />
@@ -97,9 +97,9 @@
 
 	</script>
 	<body data-spy="scroll" data-target=".navbar" data-offset='61'>
-		<div id="preloader">
+		<!-- <div id="preloader">
 			<div id="status">&nbsp;</div>
-		</div>
+		</div> -->
 	<!--INICIO: NAVEGADOR-->
 		<div class="navbar navbar-fixed-top" role="navigation">
 			<div class="container" data-start="padding: 15px 0px;" data-200="padding: 0px 0px;">
@@ -571,10 +571,10 @@
 								<h5>Backend</h5>
 							</div>
 							<div class="col-lg-4 col-sm-6">
-								<a href="#contacto"><img src="static/img/team/becario.png" class="img-responsive img-circle blue" data-bottom-top="opacity:0;" data--75-bottom="opacity:1;" alt=""></a>
+								<a href="##myModal" role="button" data-toggle="modal" class="hire-me"><img src="static/img/team/becario.png" class="img-responsive img-circle blue">
 								<h3>Tu!</h3>
 								<h4><a href="http://twitter.com/innodesign">@innodesign</a></h4>
-								<h5>Becario</h5>
+								<h5>Becario</h5></a>
 							</div>
 						</div>
 					</div>
@@ -1024,12 +1024,29 @@
 			</div>
 		</section>
 	<!--end contact section-->
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel"><i class="icon-mail"></i> Trabaja con nosotros</h3>
+      </div>
+      <div class="modal-body">
+        <form>
+          <input type="text" placeholder="Tu nombre">
+          <input type="text" placeholder="Tu email">
+          <input type="text" placeholder="Tu perfil(frontend, backend, etc)">
+          <input type="text" placeholder="Por que deberiamos contratarte?">
+          <textarea rows="3" style="width:80%"></textarea>
+          <br>
+          <button type="submit" class="btn btn-large"><i class="icon-paper-plane"></i> ENVIAR</button>
+        </form>
+      </div>
+    </div>
 	<!--start footer section-->
 		<section id="footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-sm-6 margin copy">
-						<p>2014 &copy; Innodesign&trade; - Agencia Web</p>
+						<p>2014 &copy; Innodesign&trade; - Agencia de Tecnologia | Web Design y Marketing Digital</p>
 					</div>
 					<div class="col-lg-4 col-sm-6 col-offset-2 margin social">
 						<a class="facebook" href="http://www.facebook.com/innodesign.pe" target="_blank">Facebook</a> / 
@@ -1047,7 +1064,7 @@
 	<!--end back to top button-->
 	<!--start scripts - IMPORTANT: all scripts MUST be loaded after jquery-latest.js as now-->
 	<!--latest jQuery-->
-		<script src="static/js/jquery-1.10.2.min.js"></script>
+		<script src="static/js/jquery-1.11.1.min.js"></script>
 	<!--main bootstrap js-->
 		<script src="static/js/bootstrap.min.js"></script>
 	<!--enable responsive features in IE8-->
@@ -1069,9 +1086,7 @@
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="js/skrollr.ie.min.js"></script>
 		<![endif]-->
-	<!--tour-->
-		<script src="static/js/guideline.main.js"></script>
-		<script src="static/js/guideline.steps.js"></script>
+	
 	<!--work / blog-->
 		<script src="static/js/toucheffects.js"></script>
 		<script src="static/js/modals.js"></script>
